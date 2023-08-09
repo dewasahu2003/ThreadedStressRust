@@ -36,23 +36,22 @@ cargo run --release
 
 This will build in release mode and execute the binary.
 
-## Usage
+### Usage
 
 The program allows you to do something very useful, like so:
 
 `cargo run -- --help`:to get help and more information about commands
 `cargo run cpu `:giving stress on cpu
 `cargo run gpu `:giving stress on cpu
------------------------------------------------
 `cargo run t-cpu `:giving stress on cpu --threaded
 `cargo run t-gpu `:giving stress on gpu --threaded 
 
-This reads `input.txt`, performs the awesome algorithm, and writes the output to `output.txt`.
 
 ## Look at the difference
-- Cpu normal
-    
-
+- Cpu normal - using one core
+  - ![cpu](https://github.com/dewasahu2003/GPU-stress-testing-Rust/assets/95997298/920de6f3-fa71-4007-a9a1-90ca552e8062)
+- Cpu Threaded - using all the core available in the machine
+  - ![tcpu](https://github.com/dewasahu2003/GPU-stress-testing-Rust/assets/95997298/cdcde0fd-d63e-49b1-8a22-40ecc6e3a193)
 
 ## Contributing
 
