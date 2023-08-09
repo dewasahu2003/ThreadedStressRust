@@ -41,11 +41,11 @@ This will build in release mode and execute the binary.
 
 The program allows you to do something very useful, like so:
 
-`cargo run -- --help`:to get help and more information about commands
-`cargo run cpu `:giving stress on cpu
-`cargo run gpu `:giving stress on cpu
-`cargo run t-cpu `:giving stress on cpu --threaded
-`cargo run t-gpu `:giving stress on gpu --threaded 
+- `cargo run -- --help`:to get help and more information about commands
+- `cargo run cpu `:giving stress on cpu
+- `cargo run gpu `:giving stress on cpu
+- `cargo run t-cpu `:giving stress on cpu --threaded
+- `cargo run t-gpu `:giving stress on gpu --threaded 
 
 
 ## Look at the difference
