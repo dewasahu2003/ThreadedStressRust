@@ -1,4 +1,5 @@
-# GPU||Cpu Stress Test --threaded
+[![Rust-Workflow](https://github.com/dewasahu2003/ThreadedStressRust/actions/workflows/main.yml/badge.svg)](https://github.com/dewasahu2003/ThreadedStressRust/actions/workflows/main.yml)
+# GPU-Cpu Stress Test --threaded
 
 Testing GPU and CPU using pytorch and Rust using Threading for Absoulte performance
 
