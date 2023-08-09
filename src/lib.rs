@@ -8,7 +8,7 @@ pub fn cpu_stress_test()->anyhow::Result<()>{
         let tensor= Tensor::of_slice(&slice).to_device(tch::Device::Cpu);
         println!("{} {:?}",i,tensor.size());
     }
-    ok(());
+    Ok(())
 }
 
 //Stress testing GPU
@@ -18,7 +18,7 @@ pub fn gpu_stress_test()->anyhow::Result<()>{
         let tensor= Tensor::of_slice(&slice).to_device(tch::Device::Cuda(0));
         println!("{} {:?}",i,tensor.size());
     }
-    ok(());
+    Ok(())
 }
 
 //Threaded Stress Testing Cpu
@@ -28,7 +28,7 @@ pub fn cpu_stress_test_threaded()->anyhow::Result<()>{
         let tensor = Tensor::of_slice(&slice).to_device(tch::Device::Cpu);
         println!("{} {:?}",i,tensor.size())
     });
-    ok(());
+    Ok(())
 }
 
 // Threaded Stress Testing Gpu
@@ -38,5 +38,5 @@ pub fn gpu_stress_test_threaded()->anyhow::Result<()>{
         let tensor=Tensor::of_slice(&slice).to_device(tch::Device::Cuda(0));
         println!("{} {:?}",i,tensor.size());
     });
-    ok(());
+    Ok(())
 }
